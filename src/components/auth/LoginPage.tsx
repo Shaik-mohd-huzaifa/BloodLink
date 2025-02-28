@@ -54,8 +54,9 @@ const LoginPage = () => {
       console.log("Login data:", data);
       await new Promise((resolve) => setTimeout(resolve, 1000));
 
-      // Navigate to dashboard on success
-      navigate("/");
+      // Show success message and navigate to dashboard
+      alert("Login successful!");
+      navigate("/dashboard");
     } catch (error) {
       console.error("Login failed:", error);
     } finally {
